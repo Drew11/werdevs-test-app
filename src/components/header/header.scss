@@ -1,0 +1,64 @@
+.App-header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-logo {
+    height: 100px;
+    margin-left: 90px;
+}
+
+.header-nav {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 100px;
+}
+
+.header-nav a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
+.header-nav a:hover {
+    color: #FDD000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header-nav a:nth-child(1) {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px;
+        justify-content: right;
+    }
+
+    .header-nav a {
+        height: 6px;
+        width: 40px;
+        margin-top: 10px;
+        background-color: #3D3D3D;
+    }
+
+    .header-nav a:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .header-nav a span{
+        display: none;
+    }
+
+    .header-logo {
+        margin-left: 0;
+    }
+
+}
