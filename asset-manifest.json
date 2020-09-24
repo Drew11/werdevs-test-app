@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/werdevs-test-app/static/css/main.6cc72f33.chunk.css",
-    "main.js": "/werdevs-test-app/static/js/main.1d2beff5.chunk.js",
-    "main.js.map": "/werdevs-test-app/static/js/main.1d2beff5.chunk.js.map",
+    "main.js": "/werdevs-test-app/static/js/main.b40fca61.chunk.js",
+    "main.js.map": "/werdevs-test-app/static/js/main.b40fca61.chunk.js.map",
     "runtime-main.js": "/werdevs-test-app/static/js/runtime-main.3d8ba652.js",
     "runtime-main.js.map": "/werdevs-test-app/static/js/runtime-main.3d8ba652.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/werdevs-test-app/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.ff98b137.chunk.js": "/werdevs-test-app/static/js/2.ff98b137.chunk.js",
     "static/js/2.ff98b137.chunk.js.map": "/werdevs-test-app/static/js/2.ff98b137.chunk.js.map",
     "index.html": "/werdevs-test-app/index.html",
-    "precache-manifest.ed337c4bd3807efde99ebcdb261f7e55.js": "/werdevs-test-app/precache-manifest.ed337c4bd3807efde99ebcdb261f7e55.js",
+    "precache-manifest.ca849a7ab834dce4b12eb1836b9596fe.js": "/werdevs-test-app/precache-manifest.ca849a7ab834dce4b12eb1836b9596fe.js",
     "service-worker.js": "/werdevs-test-app/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/werdevs-test-app/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.6cc72f33.chunk.css.map": "/werdevs-test-app/static/css/main.6cc72f33.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.ff98b137.chunk.js",
     "static/css/main.6cc72f33.chunk.css",
-    "static/js/main.1d2beff5.chunk.js"
+    "static/js/main.b40fca61.chunk.js"
   ]
 }
