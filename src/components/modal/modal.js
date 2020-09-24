@@ -13,11 +13,14 @@ const ModalExample = () => {
     const dispatch = useDispatch();
 
     useEffect(()=>{
-        if(daySave)
-        setTimeout(()=>{
-            setDaySave(false);
-        }, 4000)
-    },[daySave]);
+            setTimeout(()=>{
+                if(daySave){
+                    setDaySave(false)
+                }else {
+                    setNotSave(false);
+                }
+            }, 4000)
+    },[daySave, notSave]);
 
     const saveData = async () => {
         if(body){
@@ -28,7 +31,6 @@ const ModalExample = () => {
                 };
                 dispatch(saveDay(day));
                 setDaySave(true);
-                setNotSave(false);
             }, 1000);
         }else {
             setNotSave(true)
@@ -52,10 +54,9 @@ const ModalExample = () => {
 
                 <ModalHeader toggle={closeModal}>{selectedDay&&getFullDateString()}</ModalHeader>
                 <ModalBody>
-                    {!body&&notSave?
+                    {notSave?
                         <Alert color="danger">First type something</Alert>:
                         null}
-
                     {body&&daySave?
                         <Alert color="primary">Data saved in store</Alert>:
                         null}
