@@ -13,13 +13,14 @@ const ModalExample = () => {
     const dispatch = useDispatch();
 
     useEffect(()=>{
-            setTimeout(()=>{
+        const interval = setTimeout(()=>{
                 if(daySave){
                     setDaySave(false)
                 }else {
                     setNotSave(false);
                 }
-            }, 4000)
+            }, 4000);
+        return () => clearInterval(interval);
     },[daySave, notSave]);
 
     const saveData = async () => {
