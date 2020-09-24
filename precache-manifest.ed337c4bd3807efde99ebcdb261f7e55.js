@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "243b3a81cbbadfaa650b159963165d32",
+    "revision": "e800fa1c7206a1d84fa09cb704b75d19",
     "url": "/werdevs-test-app/index.html"
   },
   {
-    "revision": "9cd2d646b0c43993e672",
+    "revision": "c98e0ad780d87b9911f5",
     "url": "/werdevs-test-app/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "1e78072a73fcaa0afb1e",
+    "revision": "1a15651bb954b01af3a9",
     "url": "/werdevs-test-app/static/css/main.6cc72f33.chunk.css"
   },
   {
-    "revision": "9cd2d646b0c43993e672",
-    "url": "/werdevs-test-app/static/js/2.aecb3482.chunk.js"
+    "revision": "c98e0ad780d87b9911f5",
+    "url": "/werdevs-test-app/static/js/2.ff98b137.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/werdevs-test-app/static/js/2.aecb3482.chunk.js.LICENSE.txt"
+    "url": "/werdevs-test-app/static/js/2.ff98b137.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1e78072a73fcaa0afb1e",
-    "url": "/werdevs-test-app/static/js/main.07c26352.chunk.js"
+    "revision": "1a15651bb954b01af3a9",
+    "url": "/werdevs-test-app/static/js/main.1d2beff5.chunk.js"
   },
   {
     "revision": "822f9bd39f4978b73588",
