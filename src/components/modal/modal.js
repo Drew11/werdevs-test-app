@@ -1,26 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {useDispatch, useSelector } from "react-redux";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Alert } from 'reactstrap';
 import {saveDay, setModal} from '../../redux/actions/calendar-actions';
 
 const ModalExample = () => {
 
     const [body, setBody] = useState(null);
+    const [daySave, setDaySave] = useState(false);
+    const [notSave, setNotSave] = useState(false);
     const state = useSelector(state=>state);
     const {modal, selectedDay, dayNames, monthNames, year} = state;
     const dispatch = useDispatch();
 
-    const saveData = () => {
-        if(body){
-            const day = {
-                date: selectedDay,
-                body
-            };
-            dispatch(saveDay(day));
-        }else {
-            alert("To save something, you must first type something")
-        }
+    useEffect(()=>{
+        if(daySave)
+        setTimeout(()=>{
+            setDaySave(false);
+        }, 4000)
+    },[daySave]);
 
+    const saveData = async () => {
+        if(body){
+            await setTimeout(()=>{
+                const day = {
+                    date: selectedDay,
+                    body
+                };
+                dispatch(saveDay(day));
+                setDaySave(true);
+                setNotSave(false);
+            }, 1000);
+        }else {
+            setNotSave(true)
+        }
     };
 
     const setText = (event) => {
@@ -37,12 +49,21 @@ const ModalExample = () => {
 
     return (
             <Modal isOpen={modal} >
+
                 <ModalHeader toggle={closeModal}>{selectedDay&&getFullDateString()}</ModalHeader>
                 <ModalBody>
+                    {!body&&notSave?
+                        <Alert color="danger">First type something</Alert>:
+                        null}
+
+                    {body&&daySave?
+                        <Alert color="primary">Data saved in store</Alert>:
+                        null}
                     <Input
                         onChange={setText}
                     />
                     <br />
+
                 </ModalBody>
                 <ModalFooter>
                     <Button color="primary" onClick={saveData}>Save</Button>{' '}
