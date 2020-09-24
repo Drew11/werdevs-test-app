@@ -22,8 +22,13 @@ const Day = (props) => {
     if(numberDay && numberDay.toLocaleString().length<2){
         numberDay = `0${numberDay}`;
     }
-
     const openModal = ()=>{
+        if(indexDayInTable-numberDay > daysInMonth){
+            return
+        }
+        if(indexDayInTable < firstDayNumber){
+            return
+        }
         dispatch(setModal(true));
         dispatch(setSelectedDay(new Date(year, month, numberDay)));
     };
