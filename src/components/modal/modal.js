@@ -19,7 +19,7 @@ const ModalExample = () => {
                 }else {
                     setNotSave(false);
                 }
-            }, 4000);
+            }, 2000);
         return () => clearInterval(interval);
     },[daySave, notSave]);
 
@@ -55,7 +55,7 @@ const ModalExample = () => {
 
                 <ModalHeader toggle={closeModal}>{selectedDay&&getFullDateString()}</ModalHeader>
                 <ModalBody>
-                    {notSave?
+                    {!body&&notSave?
                         <Alert color="danger">First type something</Alert>:
                         null}
                     {body&&daySave?
