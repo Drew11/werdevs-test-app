@@ -1,3 +1,10 @@
+export const setYear = (number) => {
+    return {
+        type: "SET_YEAR",
+        payload: number
+    }
+};
+
 export const setMonth = (number) => {
     return {
         type: "SET_MONTH",

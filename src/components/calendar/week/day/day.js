@@ -5,7 +5,6 @@ import {setModal, setSelectedDay} from '../../../../redux/actions/calendar-actio
 
 const Day = (props) => {
 
-   const today = useSelector(state => state.today);
    const month = useSelector(state => state.month);
    const year = useSelector(state => state.year);
    const dispatch = useDispatch();
@@ -33,7 +32,7 @@ const Day = (props) => {
         dispatch(setSelectedDay(new Date(year, month, numberDay)));
     };
 
-    const todayStyle = numberDay === today && month === new Date().getMonth() ? 'today': null;
+    const todayStyle = numberDay === new Date().getDate() && month === new Date().getMonth() && year === new Date().getUTCFullYear() ? 'today': null;
 
     return (
         <td id={Math.random()}

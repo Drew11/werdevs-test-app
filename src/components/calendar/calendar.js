@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector } from "react-redux";
-import { setMonth } from '../../redux/actions/calendar-actions';
+import { setYear, setMonth } from '../../redux/actions/calendar-actions';
 import './calendar.scss';
 import Week from "./week/week";
 
@@ -13,20 +13,23 @@ const Calendar = () => {
     let firstDayNumber = new Date(year, month, 1).getDay();
 
     const nextMonth =()=>{
-        if(month>=11) {
-            return
+        if(month>=11){
+            dispatch(setMonth(-11));
+            dispatch(setYear(1));
+        }else {
+            dispatch(setMonth(1));
         }
-        dispatch(setMonth(1));
     };
 
     const prevMonth =()=>{
         if(month<=1) {
-            return
+            dispatch(setMonth(10));
+            dispatch(setYear(-1));
+        }else {
+            dispatch(setMonth(-1));
         }
-        dispatch(setMonth(-1));
     };
 
-    console.log(state.daysWithComments);
     const createWeek = ()=>{
 
         const mappingEl = [];

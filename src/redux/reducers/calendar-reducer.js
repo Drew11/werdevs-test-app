@@ -35,6 +35,8 @@ const initialState = {
 
 export const reducer = (state = initialState, action) => {
     switch (action.type) {
+        case 'SET_YEAR':
+            return {...state, year: state.year + action.payload};
         case 'SET_MONTH':
             return {...state, month: state.month + action.payload};
         case 'SET_MODAL':
