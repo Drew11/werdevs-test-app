@@ -17,6 +17,7 @@ const Day = (props) => {
     } = props;
 
     let numberDay = utils.checkDays(daysInMonth, indexDayInTable, weekCounter, firstDayNumber );
+    const todayStyle = numberDay === new Date().getDate() && month === new Date().getMonth() && year === new Date().getFullYear()? 'today': null;
 
     if(numberDay && numberDay.toLocaleString().length<2){
         numberDay = `0${numberDay}`;
@@ -31,8 +32,6 @@ const Day = (props) => {
         dispatch(setModal(true));
         dispatch(setSelectedDay(new Date(year, month, numberDay)));
     };
-
-    const todayStyle = numberDay === new Date().getDate() && month === new Date().getMonth() && year === new Date().getUTCFullYear() ? 'today': null;
 
     return (
         <td id={Math.random()}
