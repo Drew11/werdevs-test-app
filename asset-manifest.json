@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/werdevs-test-app/static/css/main.6cc72f33.chunk.css",
-    "main.js": "/werdevs-test-app/static/js/main.5b96e782.chunk.js",
-    "main.js.map": "/werdevs-test-app/static/js/main.5b96e782.chunk.js.map",
+    "main.js": "/werdevs-test-app/static/js/main.23ce8c81.chunk.js",
+    "main.js.map": "/werdevs-test-app/static/js/main.23ce8c81.chunk.js.map",
     "runtime-main.js": "/werdevs-test-app/static/js/runtime-main.3d8ba652.js",
     "runtime-main.js.map": "/werdevs-test-app/static/js/runtime-main.3d8ba652.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/werdevs-test-app/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.1a3f221e.chunk.js": "/werdevs-test-app/static/js/2.1a3f221e.chunk.js",
     "static/js/2.1a3f221e.chunk.js.map": "/werdevs-test-app/static/js/2.1a3f221e.chunk.js.map",
     "index.html": "/werdevs-test-app/index.html",
-    "precache-manifest.d63bbab72bb76c869361dfaef35df0d5.js": "/werdevs-test-app/precache-manifest.d63bbab72bb76c869361dfaef35df0d5.js",
+    "precache-manifest.71758471588533c35fbe49f9c6507acb.js": "/werdevs-test-app/precache-manifest.71758471588533c35fbe49f9c6507acb.js",
     "service-worker.js": "/werdevs-test-app/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/werdevs-test-app/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.6cc72f33.chunk.css.map": "/werdevs-test-app/static/css/main.6cc72f33.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.1a3f221e.chunk.js",
     "static/css/main.6cc72f33.chunk.css",
-    "static/js/main.5b96e782.chunk.js"
+    "static/js/main.23ce8c81.chunk.js"
   ]
 }
