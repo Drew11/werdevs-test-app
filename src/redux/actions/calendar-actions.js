@@ -12,13 +12,6 @@ export const setMonth = (number) => {
     }
 };
 
-export const setMainPage = (string)=> {
-    return {
-        type: "SET_MAIN_PAGE",
-        payload: string
-    }
-} ;
-
 export const setModal = (boolean) => {
     return {
         type: "SET_MODAL",

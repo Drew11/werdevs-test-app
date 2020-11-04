@@ -45,8 +45,6 @@ export const reducer = (state = initialState, action) => {
             return {...state, selectedDay: action.payload};
         case 'SAVE_DAY':
             return {...state, daysWithComments: [...state.daysWithComments, action.payload]};
-        case 'SET_MAIN_PAGE':
-            return {...state, page: action.payload};
         default:
             return state;
     }
