@@ -13,8 +13,6 @@ const App = () => {
         <Header/>
         <main>
         <ModalExample/>
-
-
             <Route exact path="/" render={() =>
                 <div className="content">
                     <div className="content-left">
