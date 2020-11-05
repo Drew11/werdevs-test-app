@@ -7,11 +7,11 @@ import {
 
 const Header = () => {
     return (<header className="App-header">
-                <img
+                <a href="./"><img
                     src={logo}
                     alt="logo"
                     className="header-logo"
-                />
+                /></a>
                 <nav className="header-nav">
                     <Link to="/"><span>Home</span></Link>
                     <Link to="/about"><span>About</span></Link>
